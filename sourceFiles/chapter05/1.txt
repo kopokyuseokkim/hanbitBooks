@@ -1,0 +1,6 @@
+import numpy
+
+number = [1, 2, 3]
+sum = numpy.sum(number)
+
+print(sum)

@@ -1,0 +1,6 @@
+numOfVisitors = 0
+for i in range(0, len(data)):
+  if "2020-12" in data.loc[i][0] and "경기도 안양시" in data.loc[i][2]:
+    numOfVisitors = numOfVisitors + float(data.loc[i][3])
+
+print(numOfVisitors)

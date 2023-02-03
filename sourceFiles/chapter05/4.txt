@@ -1,0 +1,4 @@
+class classPractice:
+  name = "클래스 연습"
+  def printTest(self):
+    print("클래스 연습")

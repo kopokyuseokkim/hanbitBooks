@@ -1,0 +1,16 @@
+import csv
+
+file_path = '/content/drive/MyDrive/mydata/data.csv'
+
+fa = open(file_path, 'a', encoding='cp949')
+writer = csv.writer(fa)
+writer.writerow([5, "최민수", '85'])
+fa.close()
+
+fr = open(file_path, 'r', encoding='cp949')
+reader = csv.reader(fr)
+
+for line in reader:
+    print(line)
+
+fr.close()    

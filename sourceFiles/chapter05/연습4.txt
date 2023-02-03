@@ -1,0 +1,7 @@
+def showMultiplicationTable():
+  num = int(input())
+  for i in range(2, 10):
+    print(str(num) + " X " + str(i) + " = " + str(num * i))
+
+if __name__ == '__main__':
+  showMultiplicationTable()

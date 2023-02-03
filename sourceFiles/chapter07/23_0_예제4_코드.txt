@@ -1,0 +1,6 @@
+from itertools import combination
+
+data = [1, 2, 3, 4, 5]
+combination = list(combinations(data, 2))
+
+print(combination)

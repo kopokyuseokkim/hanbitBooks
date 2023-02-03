@@ -1,0 +1,6 @@
+class classPerson:
+  name = "클래스 연습"
+
+if __name__ == '__main__':
+  person = classPerson()
+  print(person.name)

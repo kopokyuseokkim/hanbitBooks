@@ -1,0 +1,2 @@
+data = pd.read_csv(io.BytesIO(file_uploaded['유동인구데이터.csv']), encoding='cp949', usecols = ['일평균 유동인구', '일평균 남성 유동인구', '일평균 여성 유동인구'])
+print(data)

@@ -1,0 +1,5 @@
+text = "나는 학교에 간다"
+
+print(hannanum.morphs(text))
+print(hannanum.nouns(text))
+print(hannanum.pos(text))

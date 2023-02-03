@@ -1,0 +1,5 @@
+import io
+import pandas as pd
+
+data = pd.read_csv(io.BytesIO(file_uploaded['유동인구데이터.csv']), encoding='cp949')
+data.head()

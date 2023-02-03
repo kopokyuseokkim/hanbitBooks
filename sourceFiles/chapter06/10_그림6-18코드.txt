@@ -1,0 +1,3 @@
+data = pd.read_csv(io.BytesIO(file_uploaded['시군별유동인구데이터.csv']), encoding='cp949',
+                   usecols = ['년월', '출발지역명', '도착지역명', '20대남성 유입인구'])
+print(data)

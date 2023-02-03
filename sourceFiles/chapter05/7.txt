@@ -1,0 +1,15 @@
+class classPractice:
+  name = "클래스 연습"
+  
+  def __init__(self):
+    print("클래스 생성자 호출")
+
+  def __del__(self):
+    print("클래스 소멸자 호출")
+
+  def printTest(self):
+    print("클래스 연습")
+  
+if __name__ == '__main__':
+  classPrac = classPractice()
+  del classPrac

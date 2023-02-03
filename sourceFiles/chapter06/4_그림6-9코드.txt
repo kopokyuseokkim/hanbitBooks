@@ -1,0 +1,16 @@
+import numpy
+
+data = pd.read_csv(io.BytesIO(file_uploaded['유동인구데이터.csv']), encoding='cp949', usecols = ['일평균 유동인구'])
+data_array = data.to_numpy()
+
+minimum = numpy.min(data_array)
+maximum = numpy.max(data_array)
+summation = numpy.sum(data_array)
+average = numpy.average(data_array)
+stddev = numpy.std(data_array)
+
+print(minimum)
+print(maximum)
+print(summation)
+print(average)
+print(stddev)

@@ -1,0 +1,24 @@
+import csv
+import numpy as np
+
+file_path = '/content/drive/MyDrive/mydata/data.csv'
+
+fr = open(file_path, 'r', encoding='cp949')
+reader = csv.reader(fr)
+
+scores = []
+
+for line in reader:
+    scores.append(int(line[2]))
+
+minimum = str(np.min(scores))
+maximum = str(np.max(scores))
+average = str(np.average(scores))
+std = str(np.std(scores))
+
+print("MIN. : " + minimum)
+print("MAX. : " + maximum)
+print("AVG. : " + average)
+print("STD. : " + std)
+
+fr.close()    

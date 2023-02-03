@@ -1,0 +1,34 @@
+class subjectScore:
+  koreanScore = 0
+  englishScore = 0
+  mathScore = 0
+
+  def __init__(self, koreanScore, englishScore, mathScore):
+    self.koreanScore = koreanScore
+    self.englishScore = englishScore
+    self.mathScore = mathScore
+  
+  def setKoreanScore(self, koreanScore):
+    self.koreanScore = koreanScore
+  
+  def getKoreanScore(self):
+    return self.koreanScore
+
+  def setEnglishScore(self, englishScore):
+    self.englishScore = englishScore
+  
+  def getEnglishScore(self):
+    return self.englishScore
+  
+  def setMathScore(self, mathScore):
+    self.mathScore = mathScore
+  
+  def getMathScore(self):
+    return self.mathScore
+
+  def getAverageScore(self):
+    return (self.koreanScore + self.englishScore + self.mathScore) / 3
+
+if __name__ == '__main__':
+  score = subjectScore(65, 70, 80)
+  print(score.getAverageScore())

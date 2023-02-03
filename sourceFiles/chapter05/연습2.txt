@@ -1,0 +1,20 @@
+import numpy
+
+income = [2323000, 2702000, 2234000, 3001000, 3023000, 2623100]
+spending = [1230000, 1402530, 904000, 1123300, 1007000, 1805000]
+
+saving = []
+for i in range(0, len(income)):
+  saving.append(income[i]-spending[i])
+
+print("월별 수입액 : " + str(income))
+print("수입액 합계/최소/최대/평균/표준편차 : " + str(numpy.sum(income)) + "/" + str(numpy.min(income)) +
+      "/" + str(numpy.max(income)) + "/" + str(numpy.average(income)) + "/" + str(numpy.std(income)))
+
+print("월별 지출액 : " + str(spending))
+print("지출액 합계/최소/최대/평균/표준편차 : " + str(numpy.sum(spending)) + "/" + str(numpy.min(spending)) +
+      "/" + str(numpy.max(spending)) + "/" + str(numpy.average(spending)) + "/" + str(numpy.std(spending)))
+
+print("월별 저축액 : " + str(saving))
+print("저축액 합계/최소/최대/평균/표준편차 : " + str(numpy.sum(saving)) + "/" + str(numpy.min(saving)) +
+      "/" + str(numpy.max(saving)) + "/" + str(numpy.average(saving)) + "/" + str(numpy.std(saving)))

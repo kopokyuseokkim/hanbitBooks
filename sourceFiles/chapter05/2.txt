@@ -1,0 +1,6 @@
+import numpy
+
+score = [88, 76, 56, 45, 24]
+average = numpy.average(score)
+
+print(average)

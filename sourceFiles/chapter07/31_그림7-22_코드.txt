@@ -1,0 +1,7 @@
+file_path = '/content/drive/MyDrive/mydata/introduction.txt'
+
+with open(file_path, 'a') as my_file:
+  my_file.write("\n파일 이어 붙이기\n")
+
+with open(file_path, 'r') as my_file:
+  print(my_file.read())

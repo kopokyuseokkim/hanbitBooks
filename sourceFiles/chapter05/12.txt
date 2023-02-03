@@ -1,0 +1,25 @@
+class classPerson:
+  name = ""
+  age = 0
+  height = 0.0
+  
+  def __init__(self, name, age, height):
+    self.name = name
+    self.age = age
+    self.height = height
+  
+  def showInformation(self):
+    line = str(self.name) + " | " + str(self.age) + " | " + str(self.height)
+    print(line)
+  
+  def setName(self, name):
+    self.name = name
+  
+  def getName(self):
+    return self.name
+
+if __name__ == '__main__':
+  person1 = classPerson("홍길동", 25, 175.5)
+  person1.showInformation()
+  person1.setName("김영수")
+  print(person1.getName())

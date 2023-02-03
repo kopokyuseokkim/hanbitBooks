@@ -1,0 +1,6 @@
+import re
+
+testString = 'afternoon'
+
+matched = re.match('aft.', testString)
+print(matched.group())

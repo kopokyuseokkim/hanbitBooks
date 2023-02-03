@@ -1,0 +1,21 @@
+allCombinations = []
+allWords = []
+
+for i in range(3, 5):
+  titleXpath = ""
+  if i == 1:
+    titleXpath = "/html/body/div/div[2]/div/div[3]/div[1]/p/a"
+  else:
+    titleXpath = "/html/body/div/div[2]/div/div[3]/div[" + str(i) + "]/p/a[2]"
+  title = driver.find_element(By.XPATH, titleXpath).text
+  print(title)
+  words = nltk.word_tokenize(title)
+  print(words)
+  allWords = allWords + words
+  combination = list(combinations(words, 2))
+  allCombinations = allCombinations + combination
+
+uniqueWords = []
+for i in allWords:
+  if i not in uniqueWords:
+    uniqueWords.append(i)

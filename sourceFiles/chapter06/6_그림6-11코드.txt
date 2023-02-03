@@ -1,0 +1,8 @@
+data = [16, 18, 17, 18, 0, 19, 20, 22, 21, 0, 21, 22]
+print(data)
+
+for i in range(0, len(data)):
+  if data[i] == 0 and i > 0:
+    data[i] = (data[i - 1] + data[i + 1]) / 2
+
+print(data)

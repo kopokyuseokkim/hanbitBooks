@@ -1,0 +1,17 @@
+import numpy
+import random
+
+values = random.sample(range(100), 20)
+
+sum = numpy.sum(values)
+average = numpy.average(values)
+min = numpy.min(values)
+max = numpy.max(values)
+stddev = numpy.std(values)
+
+print("리스트 원소 : " + str(values))
+print("리스트 합계 : " + str(sum))
+print("리스트 평균 : " + str(average))
+print("리스트 최소 : " + str(min))
+print("리스트 최대 : " + str(max))
+print("리스트 표준편차 : " + str(stddev))

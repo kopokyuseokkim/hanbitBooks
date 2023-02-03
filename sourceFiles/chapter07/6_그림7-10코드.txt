@@ -1,0 +1,9 @@
+from konlpy.tag import Kkma
+
+kkma = Kkma()
+
+text = "나는 학교에 간다"
+
+print(kkma.morphs(text))
+print(kkma.nouns(text))
+print(kkma.pos(text))

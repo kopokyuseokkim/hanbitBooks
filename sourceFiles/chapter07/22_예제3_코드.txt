@@ -1,0 +1,11 @@
+import requests
+import pandas as pd
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
+
+wordcloud=WordCloud(font_path=fontpath).generate(titles)
+
+fig=plt.figure(figsize=(10,10))
+plt.imshow(wordcloud,interpolation='bilinear')
+plt.axis('off')
+plt.show()

@@ -1,0 +1,5 @@
+import nltk
+
+nltk.download('punkt')
+
+print(nltk.word_tokenize("I am a boy"))

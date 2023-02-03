@@ -1,0 +1,10 @@
+import csv
+
+file_path = '/content/drive/MyDrive/mydata/data.csv'
+
+f = open(file_path, 'r', encoding='cp949')
+data = csv.reader(f)
+
+for line in data:
+    print(line)
+f.close()    

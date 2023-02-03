@@ -1,0 +1,11 @@
+import numpy
+
+score = [20, 23, 45, 33, 77, 66, 26, 64]
+
+number_min = numpy.min(score)
+number_max = numpy.max(score)
+number_stddev = numpy.std(score)
+
+print("최소값 : " + str(number_min))
+print("최대값 : " + str(number_max))
+print("표준편차 : " + str(number_stddev))

@@ -1,0 +1,8 @@
+file_path = '/content/drive/MyDrive/mydata/introduction.txt'
+
+with open(file_path, 'w') as my_file:
+  my_file.write("Hello\n")
+  my_file.write("My name is Gil-dong Hong")
+
+with open(file_path, 'r') as my_file:
+  print(my_file.read())

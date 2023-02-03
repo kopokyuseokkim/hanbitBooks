@@ -1,0 +1,13 @@
+class userTestClass:
+  name = "클래스 연습"
+
+  def testFunc1(self):
+    print("테스트 함수1")
+  
+  def testFunc2(self):
+    print("테스트 함수2")
+    self.testFunc1()
+  
+if __name__ == '__main__':
+  testClass = userTestClass()
+  testClass.testFunc1()

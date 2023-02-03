@@ -1,0 +1,26 @@
+class productPrice:
+  milkPrice = 0
+  cokePrice = 0
+  
+  def __init__(self, milkPrice, cokePrice):
+    self.milkPrice = milkPrice
+    self.cokePrice = cokePrice
+  
+  def setMilkPrice(self, milkPrice):
+    self.milkPrice = milkPrice
+  
+  def getMilkPrice(self):
+    return self.milkPrice
+
+  def setCokePrice(cokePrice):
+    self.cokePrice = cokePrice
+  
+  def getCokePrice(self):
+    return self.cokePrice
+  
+  def getTotalPrice(self, numOfMilk, numOfCoke):
+    return (self.milkPrice * numOfMilk) + (self.cokePrice * numOfCoke)
+
+if __name__ == '__main__':
+  pp = productPrice(2100, 1500)
+  print(pp.getTotalPrice(3, 2))
