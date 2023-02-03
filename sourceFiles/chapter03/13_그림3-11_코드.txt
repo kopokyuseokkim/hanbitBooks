@@ -1,0 +1,3 @@
+users = {"name": "Choi", "height": 180, "weight": 75, "age": 30}
+del users["weight"]
+print(users)

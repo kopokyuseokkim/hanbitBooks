@@ -1,0 +1,4 @@
+people = (("kim", 23), ("lee", 33))
+print(len(people))
+print(len(people[0]))
+print(len(people[1]))

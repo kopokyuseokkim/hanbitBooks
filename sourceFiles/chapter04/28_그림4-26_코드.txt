@@ -1,0 +1,9 @@
+fruits = [["바나나", 1000], ["딸기", 1500], ["사과", 500]]
+i = 0
+while i < len(fruits):
+  j = 0
+  while j < len(fruits[i]):
+    print(fruits[i][j], end = ' ')
+    j += 1
+  print()
+  i += 1

@@ -1,0 +1,8 @@
+import random
+
+n = 0
+m = 0
+while n * m != 20:
+  n = random.randint(1, 10)
+  m = random.randint(1, 10)
+  print(n, " * ", m, " = ", n * m)

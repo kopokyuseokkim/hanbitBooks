@@ -1,0 +1,2 @@
+dictionary = {"list": [1, 2, 3], 1: "ONE", "name": "Choi", "age": 30}
+print(dictionary)

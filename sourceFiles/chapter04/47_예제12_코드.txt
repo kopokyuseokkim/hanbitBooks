@@ -1,0 +1,13 @@
+import random
+
+index = 0
+while 1:
+  index += 1
+  m = random.randint(8, 18)
+  if m >= 10 and m <= 15:
+    continue
+  elif m < 10:
+    print(index, "번째 물건의 무게가 ", m, "kg입니다.")
+  else:
+    print(index, "번째 물건의 무게가 ", m, "kg입니다.")
+    break

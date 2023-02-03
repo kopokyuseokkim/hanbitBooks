@@ -1,0 +1,8 @@
+numOfPatients = int(input("감염자 수 : "))
+
+if numOfPatients < 1000:
+  print("보통")
+elif numOfPatients >= 1000 and numOfPatients < 100000:
+  print("위험")
+else:
+  print("매우 위험")

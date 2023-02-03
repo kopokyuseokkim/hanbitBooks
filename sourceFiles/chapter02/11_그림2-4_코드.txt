@@ -1,0 +1,4 @@
+title1 = 'hello world'
+title2 = "hello world"
+print(title1)
+print(title2)

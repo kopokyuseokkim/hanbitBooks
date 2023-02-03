@@ -1,0 +1,14 @@
+scoreKorean = float(input('Korean score : '))
+scoreEnglish = float(input('English score : '))
+scoreMath = float(input('Math score : '))
+
+scoreAverage = (scoreKorean + scoreEnglish + scoreMath) / 3
+
+print("평균 점수 : " + str(scoreAverage))
+
+if scoreAverage >= 80.0:
+  print("합격")
+elif scoreAverage >= 70.0 and scoreAverage < 80.0:
+  print("재시험")
+else:
+  print("불합격")

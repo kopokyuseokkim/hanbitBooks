@@ -1,0 +1,14 @@
+a = 127
+b = -321
+print(hex(a))
+print(oct(b))
+
+e = 0o23
+f = 0o35
+print(oct(e))
+print(hex(f))
+
+g = 0x3A
+h = 0xFe
+print(hex(g))
+print(oct(h))

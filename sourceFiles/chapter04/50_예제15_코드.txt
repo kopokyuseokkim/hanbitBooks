@@ -1,0 +1,9 @@
+x = float(input("Input value for X : "))
+y = float(input("Input value for Y : "))
+
+if x > y:
+  print("x is greater than y, x = " + str(x))
+elif y > x:
+  print("y is greater than x, y = " + str(y))
+else:
+  print("x and y are the same")

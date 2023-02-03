@@ -1,0 +1,2 @@
+result = 3 + 12
+print(result)

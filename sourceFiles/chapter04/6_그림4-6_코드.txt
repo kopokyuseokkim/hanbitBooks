@@ -1,0 +1,8 @@
+score = 60
+
+if score == 100:
+  print("Perfect")
+elif score == 90:
+  print("OK")
+else:
+  print("좀 더 노력하세요!")

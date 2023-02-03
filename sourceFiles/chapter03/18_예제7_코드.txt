@@ -1,0 +1,8 @@
+scores = {"가은": [82, 97, 88], "나영": [92, 87, 82], "다래": [84, 77, 94]}
+scores_list = list(scores.values())
+kor = scores_list[0][0] + scores_list[1][0] + scores_list[2][0]
+eng = scores_list[0][1] + scores_list[1][1] + scores_list[2][1]
+mat = scores_list[0][2] + scores_list[1][2] + scores_list[2][2]
+print("국어 평균 점수 : ", kor / 3)
+print("영어 평균 점수 : ", eng / 3)
+print("수학 평균 점수 : ", mat / 3)

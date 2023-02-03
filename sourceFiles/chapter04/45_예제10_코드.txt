@@ -1,0 +1,6 @@
+n = 0
+star = ''
+while (n < 5):
+  n += 1
+  star += "*"
+  print(star)

@@ -1,0 +1,3 @@
+readPercentageOfBook = 100
+if readPercentageOfBook == 100:
+  print("참 잘했어요!")

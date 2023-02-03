@@ -1,0 +1,4 @@
+fruits = ["바나나", "딸기", "사과", "망고"]
+prices = [1000, 1500, 500, 2000]
+for fruit, price in zip(fruits, prices):
+  print(fruit, price)

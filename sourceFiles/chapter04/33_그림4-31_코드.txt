@@ -1,0 +1,7 @@
+count = 0
+end = 100
+while True:
+  count += 1
+  print(count, "번째 손님입니다.")
+  if count == end:
+    break

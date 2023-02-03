@@ -1,0 +1,5 @@
+readPercentageOfBook = 100
+if readPercentageOfBook == 100:
+  print("참 잘했어요!")
+  print("책을 한 번 더 읽어볼래요?")
+  print("역시 당신은 똑똑해")

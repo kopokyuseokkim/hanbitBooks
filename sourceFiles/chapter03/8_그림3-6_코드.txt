@@ -1,0 +1,2 @@
+names = ["kim", "lee", "park", "choi", "jung"]
+print(names)

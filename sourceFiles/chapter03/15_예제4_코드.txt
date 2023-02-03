@@ -1,0 +1,5 @@
+fruits = {"apple": 1000, "banana": 1500, "pineapple": 2000}
+price1 = fruits["apple"]
+price2 = fruits["banana"]
+sum = price1 + price2
+print(sum)

@@ -1,0 +1,19 @@
+a = 127
+b = -321
+print(a)
+print(b)
+
+c = 12.376
+d = -2.22
+print(c)
+print(d)
+
+e = 0o23
+f = 0o35
+print(e)
+print(f)
+
+g = 0x3A
+h = 0xFe
+print(g)
+print(h)

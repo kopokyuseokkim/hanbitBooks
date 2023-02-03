@@ -1,0 +1,6 @@
+students = ["가온", "나래", "다희"]
+for student in students:
+  if student == "나래":
+    print(student)
+    break
+  print(student)

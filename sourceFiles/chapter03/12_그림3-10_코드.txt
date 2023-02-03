@@ -1,0 +1,3 @@
+users = {"name": "Choi", "height": 180, "weight": 75}
+users["age"] = 30
+print(users)

@@ -1,0 +1,5 @@
+fruits = {"apple": 1000, "banana": 1500, "pineapple": 2000}
+fruits_list = list(fruits.values())
+print(fruits_list)
+print(sum(fruits_list))
+print(sum(fruits_list) / len(fruits_list))

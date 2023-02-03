@@ -1,0 +1,7 @@
+prices = (1000, 2000, 3000, 4000, 5000)
+print(price[1] + price[2])
+
+price1 = prices[1]
+price2 = prices[2]
+sum = price1 + price2
+print(sum)

@@ -1,0 +1,10 @@
+airFare = int(input("항공료(만원) : "))
+
+if airFare < 20:
+  print("국내")
+elif airFare >= 20 and airFare < 50:
+  print("일본, 중국, 홍콩, 괌")
+elif airFare >= 50 and airFare < 100:
+  print("베트남, 대만, 인도네시아, 말레이시아")
+else:
+  print("미국, 유럽 등 모든 국가")
