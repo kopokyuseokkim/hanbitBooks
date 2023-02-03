@@ -1,0 +1,2 @@
+corr = df.corr(method = 'pearson')
+print(corr)

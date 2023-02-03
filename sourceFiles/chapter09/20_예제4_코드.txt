@@ -1,0 +1,6 @@
+ actualX = np.array([test_x[0]])
+ 
+ predictedY = model.predict(actualX)
+ 
+ print("Actual Y : " + str(test_y[0]))
+ print("Predicted Y : " + str(predictedY[0][0]))

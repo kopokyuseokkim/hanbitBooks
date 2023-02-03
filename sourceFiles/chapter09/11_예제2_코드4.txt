@@ -1,0 +1,8 @@
+import numpy as np
+import statsmodels.api as sm
+import statsmodels.formula.api as smf
+import pandas as pd
+
+model = smf.ols(formula = '연간자동차판매량 ~ 인구 + 일인당국민소득', data = df)
+result = model.fit()
+print(result.summary())

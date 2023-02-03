@@ -1,0 +1,5 @@
+import statsmodels.api as sm
+
+logit = sm.Logit(y, x)
+result = logit.fit()
+result.summary()

@@ -1,0 +1,10 @@
+for i in range(0, len(df)):
+  for j in range(0, len(df.loc[i])):
+    df.loc[i][j] = int(str(df.loc[i][j]).replace(",", ""))
+
+df['연간자동차판매량'] = pd.to_numeric(df['연간자동차판매량'])
+df['인구'] = pd.to_numeric(df['인구'])
+df['일인당국민소득'] = pd.to_numeric(df['일인당국민소득'])
+
+print(df)
+print(df.dtypes)

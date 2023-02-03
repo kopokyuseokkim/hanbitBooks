@@ -1,0 +1,5 @@
+import io
+
+df = pd.read_csv(io.StringIO(uploaded['currency.csv'].decode('cp949')))
+
+print(df)

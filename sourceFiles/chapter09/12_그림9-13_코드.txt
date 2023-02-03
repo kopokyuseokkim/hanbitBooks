@@ -1,0 +1,9 @@
+passengers['sex'] = passengers['sex'].replace({'male':0, 'female':1})
+passengers['age'].fillna(value = passengers['age'].mean(), inplace = True)
+passengers['FirstClass'] = passengers['pclass'].apply(lambda x : 1 if x == 1 else 0)
+passengers['SecondClass'] = passengers['pclass'].apply(lambda x : 1 if x == 2 else 0)
+features = passengers[['sex', 'age', 'FirstClass', 'SecondClass']]
+survival = passengers['survived']
+
+print(features)
+print(survival)

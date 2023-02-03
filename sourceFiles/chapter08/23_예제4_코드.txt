@@ -1,0 +1,11 @@
+import pandas as pd
+
+heightAndWeight = [[168.5, 58], [174, 60.6], [182, 78], [171.2, 65.1], 
+                   [167, 54], [171, 65], [174.4, 67], [178.3, 74], [165, 56], 
+                   [187, 92.3]]
+
+df = pd.DataFrame(heightAndWeight, columns = ['키', '몸무게'])
+
+corr = df.corr(method = 'pearson')
+
+print(corr)

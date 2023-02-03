@@ -1,0 +1,13 @@
+import pandas as pd
+from statsmodels.tsa.arima_model import ARIMA
+
+data = []
+
+for i in range(0, len(df)):
+  date = str(df.loc[i][0])
+  currency = float(str(df.loc[i][1]).replace(",", ""))
+  data.append([date, currency])
+
+df2 = pd.DataFrame(data, columns=['date', 'currency'])
+df2 = df2.set_index('date')
+print(df2.info())

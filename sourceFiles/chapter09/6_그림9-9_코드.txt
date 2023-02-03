@@ -1,0 +1,6 @@
+import io
+
+df = pd.read_csv(io.StringIO(uploaded['company_satisfaction_logistic.csv'].decode('cp949')), usecols=['연봉(만원)', '주당 근무시간(시)', '통근시간(분)', '직장 만족도'])
+
+df = df.rename(columns={'연봉(만원)':'연봉', '주당 근무시간(시)':'주당근무시간', '통근시간(분)':'통근시간', '직장 만족도':'직장만족도'})
+print(df)

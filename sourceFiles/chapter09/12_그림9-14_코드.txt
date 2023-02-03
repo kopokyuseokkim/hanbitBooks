@@ -1,0 +1,12 @@
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.linear_model import LogisticRegression
+
+train_features, test_features, train_labels, test_labels = train_test_split(features, survival)
+
+scaler = StandardScaler()
+train_features = scaler.fit_transform(train_features)
+test_features = scaler.transform(test_features)
+
+model = LogisticRegression()
+model.fit(train_features, train_labels)

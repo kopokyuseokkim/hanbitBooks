@@ -1,0 +1,4 @@
+import io
+
+df = pd.read_csv(io.StringIO(uploaded['stock.csv'].decode('cp949')), usecols=['날짜', '종가'])
+print(df)

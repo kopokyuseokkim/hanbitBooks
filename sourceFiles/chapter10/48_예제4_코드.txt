@@ -1,0 +1,24 @@
+from numpy import array
+from keras.models import Sequential
+from keras.layers import Dense, LSTM
+ 
+x = array([[1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [6, 7], [7, 8]])
+y = array([3, 4, 5, 6, 7, 8, 9])
+ 
+x = x.reshape((x.shape[0], x.shape[1], 1))
+
+model = Sequential()
+model.add(LSTM(10, activation = 'relu', input_shape=(2, 1)))
+model.add(Dense(5))
+model.add(Dense(1))
+ 
+model.summary()
+
+model.compile(optimizer='adam', loss='mse')
+model.fit(x, y, epochs = 1000, batch_size = 1, verbose = alse)
+ 
+x_input = array([10, 11])
+x_input = x_input.reshape((1, 2, 1))
+ 
+yhat = model.predict(x_input)
+print(yhat)

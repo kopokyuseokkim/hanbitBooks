@@ -1,0 +1,21 @@
+import tensorflow as tf
+import tensorflow.keras as keras
+import numpy as np
+
+warnings.filterwarnings('ignore')
+
+dx = np.array([[1, 2, 3], [2, 4, 6], [3, 6, 9]])
+dy = np.array([10, 20, 30])
+
+model = keras.Sequential()
+
+model.add(keras.layers.Flatten(input_shape=(3,)))
+model.add(keras.layers.Dense(1, activation = 'linear'))
+
+model.compile(optimizer = keras.optimizers.SGD(learning_rate = 0.01), loss = 'mse')
+model.summary()
+
+model.fit(dx, dy, epochs = 1000, verbose = False)
+
+result = model.predict(np.array([[4, 8, 12]]))
+print(result)

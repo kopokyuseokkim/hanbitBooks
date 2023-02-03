@@ -1,0 +1,8 @@
+import numpy as np
+import statsmodels.api as sm
+import statsmodels.formula.api as smf
+import pandas as pd
+
+model = smf.ols(formula = '직장만족도 ~ 연봉 + 통근시간 + 주당근무시간', data = df)
+result = model.fit()
+print(result.summary())

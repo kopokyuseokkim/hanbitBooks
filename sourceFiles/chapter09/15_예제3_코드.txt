@@ -1,0 +1,4 @@
+from sklearn.metrics import classification_report
+
+y_pred = results.predict([850, 4.32])
+print(y_pred)

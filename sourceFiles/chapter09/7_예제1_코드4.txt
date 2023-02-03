@@ -1,0 +1,6 @@
+from statsmodels.stats.outliers_influence import variance_inflation_factor
+
+vif = pd.DataFrame()
+vif["VIF Factor"] = [variance_inflation_factor(df.values, i) for i in range(1, df.shape[1])]
+vif["features"] = df.columns[1:]
+print(vif)

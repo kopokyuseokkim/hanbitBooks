@@ -1,0 +1,6 @@
+from sklearn.preprocessing import MinMaxScaler
+
+scaler = MinMaxScaler()
+df2['currency'] = scaler.fit_transform(df2)
+df2.head()
+print(df2)

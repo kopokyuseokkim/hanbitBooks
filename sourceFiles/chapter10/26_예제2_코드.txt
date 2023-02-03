@@ -1,0 +1,25 @@
+from numpy import array
+from keras.models import Sequential
+from keras.layers import Dense, LSTM
+
+xData = []
+yData = []
+for i in range(0, len(irKorea) - 3):
+  xData.append([irAmerica[i], irAmerica[i + 1], irAmerica[i + 2]])
+
+for i in range(3, len(irAmerica)):
+  yData.append(irAmerica[i])
+
+x = array(xData)
+y = array(yData)
+ 
+x = x.reshape((x.shape[0], x.shape[1], 1))
+ 
+model = Sequential()
+model.add(LSTM(10, activation = 'relu', input_shape=(3, 1)))
+model.add(Dense(5))
+model.add(Dense(1))
+model.summary()
+ 
+model.compile(optimizer='adam', loss='mse')
+model.fit(x, y, epochs=100, batch_size=1)

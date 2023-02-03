@@ -1,0 +1,2 @@
+preds = fit.predict(226, 230, typ='levels')
+print(preds)

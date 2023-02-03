@@ -1,0 +1,2 @@
+preds = fit.predict(len(df2) - 5, len(df2) + 10, typ='levels')
+print(preds)

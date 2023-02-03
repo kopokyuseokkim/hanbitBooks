@@ -1,0 +1,11 @@
+before2010 = []
+after2010 = []
+
+for i in range(0, len(df)):
+  if df.loc[i][0] < 201001:
+    before2010.append([df.loc[i][1], df.loc[i][2]])
+  else:
+    after2010.append([df.loc[i][1], df.loc[i][2]])
+
+beforeDf = pd.DataFrame(before2010, columns = ['부동산 매매지수', '기준금리'])
+afterDf = pd.DataFrame(after2010, columns = ['부동산 매매지수', '기준금리'])

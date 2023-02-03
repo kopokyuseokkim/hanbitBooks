@@ -1,0 +1,8 @@
+import warnings
+warnings.filterwarnings(action='ignore')
+
+order = (2, 1, 2)
+model = ARIMA(df2, order=(0,1,1))
+fit = model.fit()
+
+print(fit.summary())

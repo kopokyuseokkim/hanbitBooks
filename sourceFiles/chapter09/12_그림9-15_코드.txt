@@ -1,0 +1,4 @@
+person1 = np.array([0.0, 20.0, 0.0, 0.0])
+
+print(model.predict([person1]))
+print(model.predict_proba([person1]))

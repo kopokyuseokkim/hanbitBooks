@@ -1,0 +1,24 @@
+validation_start = '20220501'
+test_start = '20220803'
+
+train = df_shifted[df_shifted.index < validation_start]
+val = df_shifted[(df_shifted.index >= validation_start) & 
+                 (df_shifted.index < test_start)]
+test = df_shifted[df_shifted.index >= test_start]
+
+X_train = train.loc[:, 'y_t-5':'y_t-0']
+y_train = train['y_t+1']
+
+X_val = val.loc[:, 'y_t-5':'y_t-0']
+y_val = val['y_t+1']
+
+X_test = test.loc[:, 'y_t-5':'y_t-0']
+y_test = test['y_t+1']
+
+print(X_train.shape, y_train.shape)
+print(X_val.shape, y_val.shape)
+print(X_test.shape, y_test.shape)
+
+X_train = X_train.values.reshape(109, 6, 1)
+X_val = X_val.values.reshape(64, 6, 1)
+X_test = X_test.values.reshape(73, 6, 1)

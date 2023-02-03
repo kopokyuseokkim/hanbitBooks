@@ -1,0 +1,7 @@
+from tensorflow.keras.datasets import boston_housing
+
+(train_x, train_y), (test_x, test_y) = boston_housing.load_data()
+mean = train_x.mean(axis=0)
+std = train_x.std(axis=0)
+train_x = (train_x - mean) / std
+test_x = (test_x - mean) / std

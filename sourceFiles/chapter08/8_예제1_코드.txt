@@ -1,0 +1,5 @@
+corr1 = beforeDf.corr(method = 'pearson')
+print("Before 2010\n" + str(corr1))
+
+corr2 = afterDf.corr(method = 'pearson')
+print("\nAfter 2010\n" + str(corr2))

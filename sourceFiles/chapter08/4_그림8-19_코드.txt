@@ -1,0 +1,8 @@
+corr1 = df.corr(method = 'pearson')
+print("Pearson\n" + str(corr1))
+
+corr2 = df.corr(method = 'spearman')
+print("\nSpearman\n" + str(corr2))
+
+corr3 = df.corr(method = 'kendall')
+print("\nKendall\n" + str(corr3))

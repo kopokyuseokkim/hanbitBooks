@@ -1,0 +1,6 @@
+irKorea = []
+irAmerica = []
+
+for i in range(0, len(df)):
+  irKorea.append(float(df.loc[i][0]))
+  irAmerica.append(float(df.loc[i][1]))

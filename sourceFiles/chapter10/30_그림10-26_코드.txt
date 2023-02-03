@@ -1,0 +1,5 @@
+import io
+
+df = pd.read_csv(io.StringIO(uploaded['realestate.csv'].decode('cp949')), usecols=['yearMonth', 'index'])
+
+print(df)

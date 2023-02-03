@@ -1,0 +1,11 @@
+before2010 = []
+after2010 = []
+
+for i in range(0, len(df)):
+  if df.loc[i][0] < 2010:
+    before2010.append([df.loc[i][1], df.loc[i][2]])
+  else:
+    after2010.append([df.loc[i][1], df.loc[i][2]])
+
+beforeDf = pd.DataFrame(before2010, columns = ['전체 졸업자 수', '전체 취업률'])
+afterDf = pd.DataFrame(after2010, columns = ['전체 졸업자 수', '전체 취업률'])

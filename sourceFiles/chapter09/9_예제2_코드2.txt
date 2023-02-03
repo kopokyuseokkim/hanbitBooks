@@ -1,0 +1,8 @@
+import io
+
+df = pd.read_csv(io.StringIO(uploaded['carSales.csv'].decode('cp949')), usecols=['연간 자동차 판매량', '총 인구(명)', '1인당 국민 총소득($)'])
+
+df = df.rename(columns={'연간 자동차 판매량':'연간자동차판매량', '총 인구(명)':'인구', '1인당 국민 총소득($)':'일인당국민소득'})
+
+print(df)
+print(df.dtypes)

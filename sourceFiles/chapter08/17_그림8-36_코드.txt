@@ -1,0 +1,3 @@
+import io
+df = pd.read_csv(io.StringIO(uploaded['house_crime_data.csv'].decode('cp949')), usecols=['빈집비율(%)', '천명당 범죄발생건수'])
+print(df)

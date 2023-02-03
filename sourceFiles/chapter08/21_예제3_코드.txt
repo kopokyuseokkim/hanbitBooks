@@ -1,0 +1,11 @@
+under10 = []
+over10 = []
+
+for i in range(0, len(df)):
+  if df.loc[i][0] < 10.0:
+    under10.append([df.loc[i][0], df.loc[i][1]])
+  else:
+    over10.append([df.loc[i][0], df.loc[i][1]])
+
+beforeDf = pd.DataFrame(under10, columns = ['빈집비율(%)', '천명당 범죄발생건수'])
+afterDf = pd.DataFrame(over10, columns = ['빈집비율(%)', '천명당 범죄발생건수'])

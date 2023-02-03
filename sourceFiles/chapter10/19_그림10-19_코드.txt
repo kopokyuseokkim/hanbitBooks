@@ -1,0 +1,5 @@
+plt.figure(figsize=(10, 5))
+plt.plot(inverse_result[:,0], label='actual')
+plt.plot(inverse_result[:,1], label='predict')
+plt.legend()
+plt.show()

@@ -1,0 +1,5 @@
+import io
+
+df = pd.read_csv(io.StringIO(uploaded['ir.csv'].decode('cp949')), usecols=['대한민국', '미국'])
+
+print(df)
