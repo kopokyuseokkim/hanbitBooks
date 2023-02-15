@@ -1,2 +1,0 @@
-age = 10
-print("Mike is " + str(age) + " years old.")
