@@ -1,0 +1,7 @@
+scores = {"가은": [82, 97, 88], "나영": [92, 87, 82], "다래": [84, 77, 94]}
+scores1 = scores["가은"]
+print("가은의 평균 점수 : ", sum(scores1) / len(scores1))
+scores2 = scores["나영"]
+print("나영의 평균 점수 : ", sum(scores2) / len(scores2))
+scores3 = scores["다래"]
+print("다래의 평균 점수 : ", sum(scores3) / len(scores3))
