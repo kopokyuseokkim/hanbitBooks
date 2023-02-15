@@ -1,2 +1,0 @@
-whie (True):
-  print("Hello, World!")
