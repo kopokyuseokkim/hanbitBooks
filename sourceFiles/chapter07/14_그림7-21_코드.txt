@@ -1,0 +1,10 @@
+import networkx as nx
+import matplotlib.pyplot as plt
+
+G = nx.Graph()
+
+G.add_nodes_from(['fruit', 'apple', 'graph', 'vegetable', 'tomato'])
+G.add_edges_from([('fruit', 'apple'), ('fruit', 'graph'), ('vegetable', 'fruit'), ('vegetable', 'tomato')])
+
+degree = nx.degree(G)
+nx.draw(G, node_size = [500 + v[1] * 500 for v in degree], with_labels = True)
