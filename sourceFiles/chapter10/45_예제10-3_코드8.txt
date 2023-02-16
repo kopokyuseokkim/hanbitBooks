@@ -1,0 +1,4 @@
+result = test[['y_t+1']]
+result['predict'] = model.predict(X_test)
+inverse_result = scalar.inverse_transform(result)
+print(inverse_result)
