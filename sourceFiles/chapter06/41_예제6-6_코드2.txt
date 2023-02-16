@@ -1,0 +1,4 @@
+import folium
+map = folium.Map(location=[37.4729081, 127.039306], zoom_start=14)
+
+map

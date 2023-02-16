@@ -1,0 +1,10 @@
+model = Sequential()
+
+#LSTM
+model.add(layers.LSTM(50, return_sequences=True, input_shape=(50, 1)))
+
+model.add(layers.LSTM(64. return_sequences=False))
+
+model.add(Dense(1, activation='linear'))
+
+model.compile(loss='mse',optimizer='rmsprop')

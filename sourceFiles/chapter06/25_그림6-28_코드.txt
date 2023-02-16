@@ -1,0 +1,12 @@
+import folium
+map_osm = folium.Map(location=[x[20], y[40]], zoom_start=14)
+for i in range(len(x)):
+  folium.Marker([x[i], y[i]], popup='용산CCTV_%d'%i
+                , icon=folium.Icon(color='red'
+                , icon='info-sign')).add_to(map_osm)
+folium.CircleMarker(location=[x[20],y[40]]
+                    , popup='용산구 CCTV'
+                    , radius=300, color="#3186cc"
+                    , fill_color="#3186cc").add_to(map_osm)
+
+map_osm

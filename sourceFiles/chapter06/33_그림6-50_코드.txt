@@ -1,0 +1,26 @@
+seq_len = 50
+sequence_length = seq_len + 1
+
+len(numOfInfected)
+
+result = []
+for index in range(len(numOfInfected) - sequence_length):
+  result.append(numOfInfected[index:index + sequence_length])
+
+mormalized_data = []
+
+for window in result:
+  normalized_window = [((float(p) / float(window[0])) - ) for p in window]
+  mormalized_data.append(normalized_window)
+
+result = np.array(mormalized_data)
+
+row = int(result.shape[0]*0.9)
+train = result[:row, :]
+np.random.shuffle(train)
+
+x_train = train[:,:-1]
+x_train = np.reshape(x_test, (x_test.shape[0], x_test.shape[1], 1))
+y_test = result[row:,-1]
+
+x_train.shape, x_test.shape

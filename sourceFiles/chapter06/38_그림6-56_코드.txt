@@ -1,0 +1,24 @@
+import numpy as np
+import pandas as pd
+import folium
+import json
+
+non_smoke_area = pd.read_csv(io.BytesIO(file_uploaded['서울시 코로나19 자치구별 확인자 발생동향.csv'])
+                   , encoding='cp949')
+#첫번째 로우
+counts = non_smoke_area.loc[0]
+
+datas = []
+for i in range(0, len(counts)):
+  if i % 2 == 1:
+    #'XX구 전체' >> 'XX구' 변환
+    gu_name = non_smoke_area.columns[i].split(" ")[0]
+
+    #새로운 배열에 추가
+    datas.append([gu_name, counts[i]])
+
+# '기타' 데이터 삭제
+del datas[len(datas) - 1]
+
+real_numOfInfected = pd.DataFrame(datas, columns = ['name', 'values'])
+real_numOfInfacted = real_numOfInfacted.sort_values(by = 'name')

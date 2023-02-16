@@ -1,0 +1,6 @@
+import folium
+import pandas as pd
+import json
+from google.colab import files
+
+file_uploaded = files.upload()

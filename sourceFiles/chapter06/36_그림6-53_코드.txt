@@ -1,0 +1,8 @@
+pred = model.predict(x_test)
+#GRU
+fig = plt.figure(facecolor='white')
+ax = fig.add_subplot(111)
+ax.plot(y_test, label='True')
+ax.plot(pred, label='Prediction')
+ax.legend()
+plt.show()
