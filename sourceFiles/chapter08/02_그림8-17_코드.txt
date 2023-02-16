@@ -1,0 +1,3 @@
+import io
+df = pd.read_csv(io.StringIO(uploaded['data.csv'].decode('cp949')), usecols = ['전체 졸업자 수', '전체 취업률'])
+print(df)
