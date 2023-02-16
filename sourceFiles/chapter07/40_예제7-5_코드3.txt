@@ -1,0 +1,30 @@
+import csv
+import numpy as np
+import random
+
+file_path = '/content/drive/MyDrive/mydata/data.csv'
+
+fw = open(file_path, 'w', encoding='cp949')
+writer = csv.writer(fw)
+
+nums = []
+
+for i in range(0, 10):
+  numA = random.randrange(1, 10)
+  numB = random.randrange(1, 10)
+  nums.append(numA)
+  nums.append(numB)
+  numC = numA + numB
+  writer.writerow([numA, numB, numC])
+
+writer.writerow([np.average(nums)])
+
+fw.close()
+
+fr = open(file_path, 'r', encoding='cp949')
+reader = csv.reader(fr)
+
+for line in reader:
+  print(line)
+
+fr.close()
