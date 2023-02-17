@@ -7,7 +7,7 @@ cctv_csv = cctv_csv.fillna(0.0)
 x = []
 y = []
 
-for i in range(len(ccsv_csv['위도'])):
+for i in range(len(cctv_csv['위도'])):
   if cctv_csv['위도'][i] == 0.0 or cctv_csv['경도'][i] == 0.0:
     pass
   else:
