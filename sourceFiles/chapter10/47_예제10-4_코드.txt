@@ -15,7 +15,7 @@ model.add(Dense(1))
 model.summary()
 
 model.compile(optimizer='adam', loss='mse')
-model.fit(x, y, epochs = 1000, batch_size = 1, verbose = alse)
+model.fit(x, y, epochs = 1000, batch_size = 1, verbose = False)
  
 x_input = array([10, 11])
 x_input = x_input.reshape((1, 2, 1))
