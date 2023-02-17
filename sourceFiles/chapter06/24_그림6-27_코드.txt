@@ -1,9 +1,9 @@
-cctv_csv = pd.read_csv(io.BytesIO(file_uploaded['cctv_data.csv']), encoding = 'cp949')
+cctv_csv = pd.read_csv(io.BytesIO(file_uploaded['서울시 용산구 (안심이) CCTV 설치 현황.csv']), encoding = 'cp949')
 
-# 데이터프레임 NaN 값 대체
+# 데이터 프레임 NaN 값 대체
 cctv_csv = cctv_csv.fillna(0.0)
 
-# x좌표(위도), y좌표(경도) 리스트로 만들기
+# x좌표(경도), y좌표(위도) 리스트로 만들기
 x = []
 y = []
 
