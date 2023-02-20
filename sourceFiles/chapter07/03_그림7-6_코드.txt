@@ -15,7 +15,7 @@ url = "https://www.korea.kr"
 driver.get(url)
 time.sleep(3)
 
-driver.find_element(By.XPATH, "/html/body/header/div/nav/ul/li[1]/a").click()
+driver.find_element(By.XPATH, "/html/body/header/nav/ul/li[1]/a").click()
 time.sleep(3)
 
 print(driver.page_source)
