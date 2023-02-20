@@ -19,7 +19,7 @@ time.sleep(3)
 titles = ""
 
 for i in range(1, 11):
-  titleXpath = "/html/body/main/div/main/section/div/div[2]/div/table/tbody/tr[" + str(i) + "]/td[2]/a"
+  titleXpath = "/html/body/div[3]/div/section[2]/div[" + str(i) + "]/a"
   title = driver.find_element(By.XPATH, titleXpath).text
   titles = titles + " " + title
 
