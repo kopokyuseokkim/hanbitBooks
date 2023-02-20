@@ -1,4 +1,13 @@
-!pip install selenium
+import sys
+
+!sudo add-apt-repository ppa:saiarcot895/chromium-beta
+!sudo apt remove chromium-browser
+!sudo snap remove chromium
+!sudo apt install chromium-browser
+
+!pip3 install selenium
 !apt-get update
 !apt install chromium-chromedriver
 !cp /usr/lib/chromium-browser/chromedriver /usr/bin
+
+sys.path.insert(0,'/usr/lib/chromium-browser/chromedriver')
