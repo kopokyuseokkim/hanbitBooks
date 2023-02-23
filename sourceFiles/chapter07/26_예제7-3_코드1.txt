@@ -1,4 +1,4 @@
-from itertools import combination
+from itertools import combinations
 
 data = [1, 2, 3, 4, 5]
 combination = list(combinations(data, 2))
