@@ -7,7 +7,7 @@ seoul_counts.columns = ['name', 'values']
 seoul_counts = seoul_counts.sort_values(by='name')
 
 m=folium.Map(
-    location = [37.5502,126.982]
+    location = [37.5502,126.982],
     tiles = 'Stamen Terrain',
     zoom_start = 11.2
 )
@@ -23,3 +23,5 @@ folium.Choropleth(
     fill_opacity = 0.5,
     line_opacity = 1
 ).add_to(m)
+
+m
