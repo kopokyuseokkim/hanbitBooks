@@ -2,4 +2,4 @@ import pandas as pd
 import io
 from google.colab import files
 
-file_uploaded = file.upload()
+file_uploaded = files.upload()
