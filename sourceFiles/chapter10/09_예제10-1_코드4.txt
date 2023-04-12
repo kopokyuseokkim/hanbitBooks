@@ -1,5 +1,4 @@
-order = (2, 1, 2)
-model = ARIMA(df2, order)
+model = ARIMA(df2, order = (2, 1, 2))
 fit = model.fit()
 
 print(fit.summary())
