@@ -3,8 +3,8 @@ import pandas as pd
 import folium
 import json
 
-non_smoke_area = pd.read_csv(io.BytesIO(file_uploaded['서울시 코로나19 자치구별 확인자 발생동향.csv'])
-                   , encoding='cp949')
+non_smoke_area = pd.read_csv(io.BytesIO(file_uploaded['서울시 코로나19 자치구별 확진자 발생동향.csv']), 
+                             encoding='cp949')
 #첫번째 로우
 counts = non_smoke_area.loc[0]
 
@@ -21,4 +21,4 @@ for i in range(0, len(counts)):
 del datas[len(datas) - 1]
 
 real_numOfInfected = pd.DataFrame(datas, columns = ['name', 'values'])
-real_numOfInfacted = real_numOfInfacted.sort_values(by = 'name')
+real_numOfInfected = real_numOfInfected.sort_values(by = 'name')
