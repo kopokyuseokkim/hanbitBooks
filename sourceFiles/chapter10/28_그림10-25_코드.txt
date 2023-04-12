@@ -1,5 +1,5 @@
 import io
 
-df = pd.read_csv(io.StringIO(uploaded['realestate.csv'].decode('cp949')), usecols=['yearMonth', 'index'])
+df = pd.read_csv(io.StringIO(uploaded['아파트_매매_실거래가격지수.csv'].decode('cp949')), usecols=['시점', '전국'])
 
 print(df)
