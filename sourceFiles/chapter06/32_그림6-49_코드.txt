@@ -1,6 +1,6 @@
 import io
 
 datas = pd.read_csv('서울시 코로나19 확진자 발생동향.csv'
-          , encoindg='cp949'
+          , encoding='cp949'
           , usecols=['서울시 추가 확진'])
 numOfInfected = datas['서울시 추가 확진'].values
