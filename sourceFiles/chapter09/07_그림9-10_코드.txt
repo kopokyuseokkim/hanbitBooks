@@ -1,5 +1,8 @@
 import statsmodels.api as sm
 
+x = df[['연봉','주당근무시간', '통근시간']]
+y = df[['직장만족도']]
+
 logit = sm.Logit(y, x)
 result = logit.fit()
 result.summary()
