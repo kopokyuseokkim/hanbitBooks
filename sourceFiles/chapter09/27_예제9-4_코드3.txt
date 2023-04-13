@@ -1,3 +1,5 @@
+ import numpy as np
+ 
  actualX = np.array([test_x[0]])
  
  predictedY = model.predict(actualX)
