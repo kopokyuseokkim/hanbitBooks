@@ -1,5 +1,5 @@
 import io
 
-df = pd.read_csv(io.StringIO(uploaded['환율.csv'].decode('cp949')))
+df = pd.read_csv(io.StringIO(uploaded['환율.csv'].decode('cp949')), usecols=['년월', '원달러환율'])
 
 print(df)
