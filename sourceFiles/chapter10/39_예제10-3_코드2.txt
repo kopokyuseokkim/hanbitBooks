@@ -1,5 +1,5 @@
 import io
 
-df = pd.read_csv(io.StringIO(uploaded['stockData.csv'].decode('cp949')), usecols=['Date', 'Close'])
+df = pd.read_csv(io.StringIO(uploaded['GOOG.csv'].decode('cp949')), usecols=['Date', 'Close'])
 
 print(df)
