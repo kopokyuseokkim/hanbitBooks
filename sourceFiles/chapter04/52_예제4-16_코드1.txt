@@ -1,6 +1,6 @@
 for i in range(5):
   for j in range(5):
-    if == j:
+    if i == j:
       print("*")
       break
     else:
