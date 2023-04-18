@@ -1,8 +1,8 @@
-def printRepeatdely():
+def printRepeatedly():
   text = input()
   number = int(input())
   for i in range(0, number):
     print(text)
     
 if __name__ == '__main__':
-  printRepeatdely()
+  printRepeatedly()
