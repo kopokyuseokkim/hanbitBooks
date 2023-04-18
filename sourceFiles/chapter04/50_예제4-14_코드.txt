@@ -1,4 +1,4 @@
-prop = float(input("Precipitation Probability : "))
+prob = float(input("Precipitation Probability : "))
 
 if prob >= 50.0:
   print("Take your umbrella")
